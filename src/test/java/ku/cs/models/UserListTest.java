@@ -1,11 +1,18 @@
 package ku.cs.models;
 
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
 class UserListTest {
+    UserList users;
+
+    @BeforeEach
+    void init() {
+        users = new UserList();
+    }
 
     @Test
     @DisplayName("User should be found in UserList")
